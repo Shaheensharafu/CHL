@@ -1,0 +1,16 @@
+{% extends "base.html"%}
+
+{% block title %}
+docters
+{%endblock%}
+
+{% block content %}
+ 
+  {% for d in docs %}
+ <div class="mx-auto w-50 text-center p-3 my-5 bg-info text-white">
+  <h1>{{d.name}}</h1>
+    <p>{{d.department}}</p>
+    <p>{{d.phone_number}}</p>
+ </div>
+  {%endfor%}
+{%endblock%}
